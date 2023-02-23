@@ -86,53 +86,52 @@ textarea_frame.place(x=200 ,y=250)
 textarea = Text(textarea_frame , bg="white" , fg="black" , width=76 , height=400 ,borderwidth=7 , font="aerial 18 bold" , wrap="word" , relief=GROOVE , state=DISABLED)
 textarea.place(x=0 , y=0)
 
-frame_output = Frame(typing_test , bg="grey80" , width=1450 , height=50)
+frame_output = Frame(typing_test , bg="white" , width=1450 , height=50)
 frame_output.place(x=0 , y=200)
 
-elapsed_time_label = Label(frame_output , bg="grey80" , fg="red" , text="Elasped Time : " , font="tahoma 12 bold")
-elapsed_time_label.place(x=10 , y=2)
+elapsed_time_label = Label(frame_output , bg="white" , fg="red" , text="Elasped Time : " , font="tahoma 12 bold")
+elapsed_time_label.place(x=10 ,y=8)
+elapsed_timer_label = Label(frame_output , bg="white" , fg="red" , text="0" , font="tahoma 12 bold")
+elapsed_timer_label.place(x=150 , y=8)
 
-elapsed_timer_label = Label(frame_output , bg="grey80" , fg="red" , text="0" , font="tahoma 12 bold")
-elapsed_timer_label.place(x=150 , y=2)
+remaining_time_label = Label(frame_output , bg="white" , fg="red" , text="Remaining Time : " , font="tahoma 12 bold")
+remaining_time_label.place(x=280 , y=8)
 
-remaining_time_label = Label(frame_output , bg="grey80" , fg="red" , text="Remaining Time : " , font="tahoma 12 bold")
-remaining_time_label.place(x=280 , y=2)
+remaining_timer_label = Label(frame_output , bg="white" , fg="red" , text="60" , font="tahoma 12 bold")
+remaining_timer_label.place(x=450 , y=8)
 
-remaining_timer_label = Label(frame_output , bg="grey80" , fg="red" , text="60" , font="tahoma 12 bold")
-remaining_timer_label.place(x=450 , y=2)
+wpm_label = Label(frame_output , bg="white" , fg="red" , text="WPM : " , font="tahoma 12 bold")
+wpm_label.place(x=630 , y=8)
 
-wpm_label = Label(frame_output , bg="grey80" , fg="red" , text="WPM : " , font="tahoma 12 bold")
-wpm_label.place(x=630 , y=2)
+wpm_count_label = Label(frame_output , bg="white" , fg="red" , text="0" , font="tahoma 12 bold")
+wpm_count_label.place(x=700 , y=8)
 
-wpm_count_label = Label(frame_output , bg="grey80" , fg="red" , text="0" , font="tahoma 12 bold")
-wpm_count_label.place(x=700 , y=2)
+totalwords_label = Label(frame_output , bg="white" , fg="red" , text="Total Words : " , font="tahoma 12 bold")
+totalwords_label.place(x=800 , y=8)
 
-totalwords_label = Label(frame_output , bg="grey80" , fg="red" , text="Total Words : " , font="tahoma 12 bold")
-totalwords_label.place(x=800 , y=2)
+totalwords_count_label = Label(frame_output , bg="white" , fg="red" , text="0" , font="tahoma 12 bold")
+totalwords_count_label.place(x=930 , y=8)
 
-totalwords_count_label = Label(frame_output , bg="grey80" , fg="red" , text="0" , font="tahoma 12 bold")
-totalwords_count_label.place(x=930 , y=2)
+wrongwords_label = Label(frame_output , bg="white" , fg="red" , text="Wrong Words : " , font="tahoma 12 bold")
+wrongwords_label.place(x=1050 , y=8)
 
-wrongwords_label = Label(frame_output , bg="grey80" , fg="red" , text="Wrong Words : " , font="tahoma 12 bold")
-wrongwords_label.place(x=1050 , y=2)
-
-wrongwords_count_label = Label(frame_output , bg="grey80" , fg="red" , text="0" , font="tahoma 12 bold")
-wrongwords_count_label.place(x=1200 , y=2)
+wrongwords_count_label = Label(frame_output , bg="white" , fg="red" , text="0" , font="tahoma 12 bold")
+wrongwords_count_label.place(x=1200 , y=8)
 
 button_frame = Frame(typing_test , bg="grey80" , width=230 , height=400 , borderwidth=5)
 button_frame.place(x=1210 , y=250)
 
-startButton = Button(button_frame, text="<< Start >>" , width=10 , height=2  , fg="black" , bg="grey80" , border=10 , font="monospace 10 bold" , command=start)
+startButton = Button(button_frame, text="<< Start >>" , width=10 , height=2  , fg="white" , bg="green" , border=10 , font="monospace 10 bold" , command=start)
 startButton.place(x=50 , y=120)
 
-exitButton = Button(button_frame , text=">> Exit <<" , width=10 , height=2 , command=typing_test.destroy , fg="black" , bg="grey80" , border=10 , font="monospace 10 bold")
+exitButton = Button(button_frame , text=">> Exit <<" , width=10 , height=2 , command=typing_test.destroy , fg="white" , bg="red" , border=10 , font="monospace 10 bold")
 exitButton.place(x=50 , y=200)
 
 
-button_frame_left = Frame(typing_test , bg="grey80" , width=160 , height=400 , borderwidth=5)
-button_frame_left.place(x=20 , y=250)
+button_frame_left = Frame(typing_test , bg="#1429A9" , width=180 , height=400 , borderwidth=5)
+button_frame_left.place(x=10 , y=250)
 
-button_frame_left_label = Label(button_frame_left , text="Start Typing Here --->" , font="algerian 20 bold" , wraplength=100 , bg="grey80" , fg="black")
+button_frame_left_label = Label(button_frame_left , text="Start Typing Here --->" , font="algerian 20 bold" , wraplength=100 , bg="#1429A9" , fg="white")
 button_frame_left_label.place(x=20 , y=120)
 
 
